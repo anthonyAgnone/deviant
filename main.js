@@ -1,5 +1,6 @@
 const electron = require("electron");
 const $ = require("jquery");
+const remote = electron.remote;
 require("electron-reload")(__dirname);
 
 const app = electron.app;
@@ -21,7 +22,8 @@ class Main {
     this.mainWindow = new BrowserWindow({
       width,
       height,
-      fullscreen: true
+      fullscreen: true,
+      autoHideMenuBar: true
     });
     this.mainWindow.loadURL(
       url.format({
@@ -42,12 +44,6 @@ class Main {
     app.on("window-all-closed", function() {
       if (process.platform !== "darwin") {
         app.quit();
-      }
-    });
-
-    app.on("activate", function() {
-      if (this.mainWindow === null) {
-        this.createWindow();
       }
     });
   }

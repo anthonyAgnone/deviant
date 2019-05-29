@@ -111,3 +111,45 @@ body {
 #exit-btn:hover {
   background-image: url("../img/menuAssets/exitToDesktopSelected.png");
 }
+
+#controlsModal {
+  display: flex;
+  opacity: 0;
+  transition: 0.6 all ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+#controlsModal .content {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 75%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.6em;
+}

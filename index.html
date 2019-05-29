@@ -9,14 +9,24 @@
     <canvas id="canvas"></canvas>
     <div class="menu-screen">
       <button class="menu-btn" id="start-btn"></button>
-      <!-- <button class="menu-btn" id="controls-btn"></button>
-      <button class="menu-btn" id="options-btn"></button>
-      <button class="menu-btn" id="exit-btn"></button> -->
+      <button class="menu-btn" id="controls-btn"></button>
+      <!-- <button class="menu-btn" id="options-btn"></button> -->
+      <button class="menu-btn" id="exit-btn"></button>
     </div>
+    <section id="controlsModal">
+      <div class="content">
+        <button class="close" id="closeButton">X</button>
+        <h1>Controls</h1>
+        <h2>A: Move Left</h2>
+        <h2>D: Move Right</h2>
+        <h2>Spacebar: Jump</h2>
+        <h2>Left Mouse: Grapple</h2>
+        <h2>Right Mouse: Ability</h2>
+      </div>
+    </section>
   </body>
 
   <script>
-    // You can also require other files to  run in this process
-    require("./js/menu.js");
+    require("./menu.js");
   </script>
 </html>
