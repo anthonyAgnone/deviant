@@ -194,7 +194,6 @@ function createHero(h, w) {
       return "idle";
     }
     hero.draw = function drawHero(context) {
-      console.log(this.isDead);
       sprite.draw(routeFrame(this), context, 0, 0);
     };
 
